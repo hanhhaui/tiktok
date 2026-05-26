@@ -1,0 +1,25 @@
+{
+  "name": "tiktok-bar-backend",
+  "version": "1.0.0",
+  "description": "Node.js backend that forwards TikTok LIVE comments and gifts to frontend clients over Socket.IO.",
+  "type": "module",
+  "main": "src/server.js",
+  "scripts": {
+    "dev": "nodemon src/server.js",
+    "start": "node src/server.js",
+    "check": "node --check src/server.js && node --check src/tiktokLiveService.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.6",
+    "dotenv": "^17.4.2",
+    "express": "^5.2.1",
+    "socket.io": "^4.8.3",
+    "tiktok-live-connector": "^2.3.0-beta1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.11"
+  }
+}
