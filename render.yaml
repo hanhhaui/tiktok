@@ -1,0 +1,19 @@
+services:
+  - type: web
+    name: tiktok-bar-backend
+    runtime: docker
+    plan: free
+    dockerContext: tiktok-bar-backend
+    dockerfilePath: tiktok-bar-backend/Dockerfile
+    healthCheckPath: /health
+    envVars:
+      - key: HOST
+        value: 0.0.0.0
+      - key: FRONTEND_ORIGIN
+        value: https://hanhhaui.github.io
+      - key: TIKTOK_USERNAME
+        sync: false
+      - key: TIKTOK_SESSION_ID
+        sync: false
+      - key: TIKTOK_TARGET_IDC
+        sync: false
