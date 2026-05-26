@@ -1,0 +1,20 @@
+{
+  "name": "River Cleanup Game",
+  "short_name": "Cleanup",
+  "description": "TikTok LIVE interactive river cleanup game.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "fullscreen",
+  "display_override": ["fullscreen", "standalone"],
+  "orientation": "portrait",
+  "background_color": "#10251f",
+  "theme_color": "#10251f",
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}
